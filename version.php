@@ -1,19 +1,17 @@
 <?php
- 
-// This line protects the file from being accessed by a URL directly.                                                               
-defined('MOODLE_INTERNAL') || die();                                                                                                
- 
-// This is the version of the plugin.                                                                                               
-$plugin->version = '2016102100';                                                                                                    
- 
-// This is the version of Moodle this plugin requires.                                                                              
-$plugin->requires = '2016070700';                                                                                                   
- 
-// This is the component name of the plugin - it always starts with 'theme_'                                                        
-// for themes and should be the same as the name of the folder.                                                                     
-$plugin->component = 'theme_sead-m-v3.0.1';                                                                                                 
- 
-// This is a list of plugins, this plugin depends on (and their versions).                                                          
-$plugin->dependencies = [                                                                                                           
-    'theme_boost' => '2016102100'                                                                                                   
+
+/**
+ * version.php
+ *
+ * @package    theme_sead-m-v3.0.1
+ * @copyright  2018 onwards ldiufes.
+ * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ */
+                                                          
+defined('MOODLE_INTERNAL') || die();
+$plugin->version = '2018081500';
+$plugin->requires = '2018041200';                             
+$plugin->component = 'theme_sead-m-v3.0.1';
+$plugin->dependencies = [                                   
+    'theme_boost' => '2017111300'                                     
 ];
