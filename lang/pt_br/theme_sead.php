@@ -7,9 +7,8 @@
  * @copyright  2018 onwards ldiufes.
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
-
+ 
 defined('MOODLE_INTERNAL') || die();
-$plugin->version = '2018081500';
-$plugin->requires = '2018041200';
-$plugin->component = 'theme_sead';
-$plugin->dependencies = [ 'theme_boost' => '2017111300' ];
+$string['choosereadme'] = 'Tema Sead Ufes';
+$string['pluginname'] = 'Sead-M-v3.0.1';
+$string['region-side-pre'] = 'Right';
