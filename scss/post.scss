@@ -1,0 +1,185 @@
+
+/* Elementos primários */
+
+body {
+  background-color: #fafafa;
+}
+
+a {
+  color: $corAuxiliar;
+
+  &:hover {
+    color: darken($corAuxiliar, 20%);
+  }
+}
+
+
+/* Leiaute */
+
+#page-wrapper {
+  padding-bottom: 0;
+}
+
+
+/* Topo */
+nav.navbar {
+  padding: 0 1rem 0 0;
+  background-color: $corEscura;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  color: white;
+
+  a, i {
+    color: white;
+
+    &:visited {
+      color: white;
+    }
+
+    &:hover, &:active, &:focus, &:focus-within {
+      color: #cacaca;
+    }
+  }
+
+  button.nav-link {
+    height: 50px;
+    padding-left: 2rem;
+    border: none;
+    background-color: $corPrimaria;
+    color: white;
+
+    &:visited {
+      color: white;
+    }
+
+    &:hover, &:active, &:focus, &:focus-within {
+      -webkit-box-shadow: none;
+      box-shadow: none;
+      background-color: lighten($corPrimaria, 10%) !important;
+
+      i {
+        color: white;
+      }
+    }
+  }
+
+  .marca {
+    margin: 0 1rem;
+  }
+
+  .usermenu .login a {
+    color: lighten($corAuxiliar, 10%);
+
+    &:hover {
+      text-decoration: none;
+      color: lighten($corAuxiliar, 15%);
+    }
+  }
+}
+
+/* Barra lateral / Menu */
+#nav-drawer {
+  background-color: white;
+
+  .list-group {
+
+    .list-group-item {
+      border: none;
+      background-color: transparent;
+      font-weight: bold;
+      color: $corEscura;
+
+      &.active {
+        background-color: $corPrimaria;
+        color: white;
+      }
+    }
+  }
+}
+
+
+/* Cabeçalho da página */
+header {
+  background-color: $corPrimaria;
+  color: white;
+
+  .card {
+    border: none;
+    background-color: transparent;
+  }
+
+  .breadcrumb {
+
+    .breadcrumb-item:before {
+      color: white;
+    }
+
+    a {
+      text-decoration: underline;
+      color: white;
+
+      &:hover, &:active, &:focus, &:focus-within {
+        text-decoration: none;
+        color: #cacaca;
+      }
+    }
+  }
+}
+
+
+/* Conteúdo da página */
+#page-content {
+
+  .card {
+    border: none;
+    background-color: transparent;
+  }
+}
+
+
+/* Rodapé */
+#page-footer {
+  background-color: #f2f2f2;
+  color: #7F7F7F;
+
+  a {
+    color: #7F7F7F;
+
+    &:visited, .icon {
+      color: #7F7F7F;
+    }
+
+    &:hover, &:active, &:focus, &:focus-within {
+      text-decoration: none;
+      color: lighten(#7F7F7F, 10%);
+    }
+  }
+}
+
+
+
+
+
+
+
+#page-login-index {
+
+  .card {
+
+    .card-block {
+
+      .card-header {
+        border: 0;
+        background-color: $corPrimaria;
+        color: white;
+      }
+
+      .card-body {
+        padding: 1.25rem 1.25rem 3rem 1.25rem;
+        border: 1px solid #E5E5E5;
+        background-color: white;   
+      }
+    }
+  }
+}
+
