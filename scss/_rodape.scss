@@ -1,0 +1,18 @@
+#page-footer {
+  border-top: 1px solid #d5d5d5;
+  background-color: #f2f2f2;
+  color: #7F7F7F;
+
+  a {
+    color: #7F7F7F;
+
+    &:visited, .icon {
+      color: #7F7F7F;
+    }
+
+    &:hover, &:active, &:focus, &:focus-within {
+      text-decoration: none;
+      color: lighten(#7F7F7F, 10%);
+    }
+  }
+}

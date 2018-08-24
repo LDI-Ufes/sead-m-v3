@@ -1,0 +1,24 @@
+#nav-drawer {
+  background-color: white;
+
+  .list-group {
+
+    .list-group-item {
+      border: none;
+      background-color: transparent;
+      font-weight: bold;
+      color: $corEscura;
+
+      &:hover {
+        background-color: $corAuxiliar;
+        color: white;
+      }
+
+      &.active {
+        border: none;
+        background-color: $corPrimaria;
+        color: white;
+      }
+    }
+  }
+}

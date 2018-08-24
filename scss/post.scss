@@ -1,17 +1,82 @@
 
-/* Elementos primários */
+@import 'primarios';
+@import 'barraNav';
+@import 'barraLat';
+@import 'cabecalho';
+@import 'rodape';
 
-body {
-  background-color: #fafafa;
+.cardx {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #fff;
+  -webkit-background-clip: border-box;
+  background-clip: border-box;
 }
 
-a {
-  color: $corAuxiliar;
+.dropdown-menu {
+  background-color: $corEscura;
+  color: white;
 
-  &:hover {
-    color: darken($corAuxiliar, 20%);
+  .dropdown-item, .dropdown-item a {
+    color: white;
+
+    &:hover, &:active, &:focus, &:focus-within {
+      background-color: $corPrimaria;
+      color: white !important;
+    }
   }
 }
+
+.generaltable {
+  float: left;
+  margin-top: 1rem;
+}
+
+.messaging-area-container .messaging-area .contacts-area {
+  
+  .searchtextarea {
+    background-color: whitesmoke;
+  }
+
+  .contacts {
+    height: 480px;
+  }
+  
+  .tabs {
+    height: 70px;
+    
+    .tab {
+      padding: 10px;
+    }
+  }
+}
+
+.preferences-container {
+
+  .preference-table {
+
+    tr td:not(:first-child) {
+      width: auto;
+    }
+
+    .preference-row {
+
+      .preference-state {
+
+        .preference-state-status-container {
+          width: auto;
+          min-width: 4.7rem;
+          height: auto;
+          padding: 5px;
+        }
+      }
+    }
+  }
+}
+
 
 
 /* Leiaute */
@@ -21,142 +86,105 @@ a {
 }
 
 
-/* Topo */
-nav.navbar {
-  padding: 0 1rem 0 0;
-  background-color: $corEscura;
-  -webkit-box-shadow: none;
-  box-shadow: none;
-  color: white;
-
-  a, i {
-    color: white;
-
-    &:visited {
-      color: white;
-    }
-
-    &:hover, &:active, &:focus, &:focus-within {
-      color: #cacaca;
-    }
-  }
-
-  button.nav-link {
-    height: 50px;
-    padding-left: 2rem;
-    border: none;
-    background-color: $corPrimaria;
-    color: white;
-
-    &:visited {
-      color: white;
-    }
-
-    &:hover, &:active, &:focus, &:focus-within {
-      -webkit-box-shadow: none;
-      box-shadow: none;
-      background-color: lighten($corPrimaria, 10%) !important;
-
-      i {
-        color: white;
-      }
-    }
-  }
-
-  .marca {
-    margin: 0 1rem;
-  }
-
-  .usermenu .login a {
-    color: lighten($corAuxiliar, 10%);
-
-    &:hover {
-      text-decoration: none;
-      color: lighten($corAuxiliar, 15%);
-    }
-  }
-}
-
-/* Barra lateral / Menu */
-#nav-drawer {
-  background-color: white;
-
-  .list-group {
-
-    .list-group-item {
-      border: none;
-      background-color: transparent;
-      font-weight: bold;
-      color: $corEscura;
-
-      &.active {
-        background-color: $corPrimaria;
-        color: white;
-      }
-    }
-  }
-}
-
-
-/* Cabeçalho da página */
-header {
-  background-color: $corPrimaria;
-  color: white;
-
-  .card {
-    border: none;
-    background-color: transparent;
-  }
-
-  .breadcrumb {
-
-    .breadcrumb-item:before {
-      color: white;
-    }
-
-    a {
-      text-decoration: underline;
-      color: white;
-
-      &:hover, &:active, &:focus, &:focus-within {
-        text-decoration: none;
-        color: #cacaca;
-      }
-    }
-  }
-}
-
 
 /* Conteúdo da página */
 #page-content {
+  padding: 30px 15px;
+
+  h2 {
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+  }
+
+  h2:first-of-type {
+    margin-top: 0;
+  }
 
   .card {
-    border: none;
-    background-color: transparent;
+    background-color: white;
+    border: 1px solid #d5d5d5;
+  }
+
+  .block {
+
+    .card-body {
+      padding: 0;
+    }
+  }
+
+  .mform fieldset {
+    margin-top: 1rem;
+  }
+
+
+  aside {
+    /*padding: 2rem 0;*/
+
+    &#block-region-side-pre {
+      padding: 1.25rem 0;
+    }
+
+    .block {
+
+      .card-body {
+
+        h5 {
+          width: 100%;
+          padding: 13px 1.25rem;
+          background: #fafafa;
+          border-bottom: 1px solid #d5d5d5;
+        }
+
+        .card-text.content {
+          padding: 0 1.25rem 1.25rem 1.25rem;
+        }
+      }
+    }
   }
 }
 
 
-/* Rodapé */
-#page-footer {
-  background-color: #f2f2f2;
-  color: #7F7F7F;
+#course-category-listings {
 
-  a {
-    color: #7F7F7F;
-
-    &:visited, .icon {
-      color: #7F7F7F;
-    }
-
-    &:hover, &:active, &:focus, &:focus-within {
-      text-decoration: none;
-      color: lighten(#7F7F7F, 10%);
-    }
+  h3 {
+    padding: .75rem 1.25rem; // .card-header
   }
 }
 
+#frontpage-course-list {
 
+  > h2 {
+    margin-bottom: 25px;
+  }
+
+  .coursebox {
+    border: 1px solid #d5d5d5;
+    border-left: 5px solid $corAuxiliar;
+  }
+
+  .coursename a {
+    padding-left: 25px;
+    background-position: left center;
+    line-height: 1.640625rem;
+  }
+}
+
+.course-content {
+
+  ul.topics {
+
+    li.section {
+      padding-top: 2rem;
+
+      .right.side {
+
+        .section_action_menu {
+          margin-bottom: 1.5rem;
+        }
+      }
+    }    
+  }
+}
 
 
 

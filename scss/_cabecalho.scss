@@ -1,0 +1,26 @@
+#page-header {
+  background-color: $corPrimaria;
+  color: white;
+
+  a {
+    text-decoration: none;
+    color: white;
+
+    &:hover, &:active, &:focus, &:focus-within {
+      text-decoration: none;
+      color: #cacaca;
+    }
+  }
+
+  .card {
+    border: none;
+    background-color: transparent;
+  }
+
+  .breadcrumb {
+
+    .breadcrumb-item:before {
+      color: white;
+    }
+  }
+}

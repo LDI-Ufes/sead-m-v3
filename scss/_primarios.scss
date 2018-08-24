@@ -1,0 +1,38 @@
+
+/* Elementos primários */
+
+body {
+  background-color: #fafafa;
+}
+
+a {
+  color: $corAuxiliar;
+
+  &:hover {
+    color: darken($corAuxiliar, 10%);
+  }
+}
+
+
+/* Elementos secundários */
+
+.btn {
+  font-size: 1rem;
+}
+
+.btn-default, .btn-secondary {
+  border: none;
+  background-color: $corPrimaria;
+  color: white;
+
+  &:hover, &:active, &:focus, &:focus-within {
+    background-color: darken($corPrimaria, 10%);
+    color: white;
+  }
+}
+
+input[type="submit"] {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+

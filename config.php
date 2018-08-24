@@ -35,3 +35,5 @@ $THEME->extrascsscallback = 'theme_sead_get_extra_scss';
 $THEME->scss = function($theme) {                                                                                                   
     return theme_sead_get_main_scss_content($theme);                                                                               
 };
+
+$THEME->javascripts_footer = array('jquery', 'aplicacao');
