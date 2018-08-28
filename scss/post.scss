@@ -1,4 +1,3 @@
-
 @import 'primarios';
 @import 'barraNav';
 @import 'barraLat';
@@ -16,27 +15,13 @@
   background-clip: border-box;
 }
 
-.dropdown-menu {
-  background-color: $corEscura;
-  color: white;
-
-  .dropdown-item, .dropdown-item a {
-    color: white;
-
-    &:hover, &:active, &:focus, &:focus-within {
-      background-color: $corPrimaria;
-      color: white !important;
-    }
-  }
-}
-
 .generaltable {
   float: left;
   margin-top: 1rem;
 }
 
 .messaging-area-container .messaging-area .contacts-area {
-  
+
   .searchtextarea {
     background-color: whitesmoke;
   }
@@ -44,10 +29,10 @@
   .contacts {
     height: 480px;
   }
-  
+
   .tabs {
     height: 70px;
-    
+
     .tab {
       padding: 10px;
     }
@@ -77,17 +62,10 @@
   }
 }
 
-
-
-/* Leiaute */
-
 #page-wrapper {
   padding-bottom: 0;
 }
 
-
-
-/* Conteúdo da página */
 #page-content {
   padding: 30px 15px;
 
@@ -118,10 +96,9 @@
 
 
   aside {
-    /*padding: 2rem 0;*/
 
     &#block-region-side-pre {
-      padding: 1.25rem 0;
+      //padding: 1.25rem 0;
     }
 
     .block {
@@ -143,6 +120,13 @@
   }
 }
 
+#region-main {
+  /*padding: 1.25rem 0;*/
+}
+
+.buttons {
+  margin-top: 1rem;
+}
 
 #course-category-listings {
 
@@ -152,20 +136,64 @@
 }
 
 #frontpage-course-list {
+  margin-top: 25px;
 
   > h2 {
     margin-bottom: 25px;
-  }
-
-  .coursebox {
-    border: 1px solid #d5d5d5;
-    border-left: 5px solid $corAuxiliar;
   }
 
   .coursename a {
     padding-left: 25px;
     background-position: left center;
     line-height: 1.640625rem;
+  }
+}
+
+#page-course-index-category .generalbox.info {
+  border: 1px solid #ddd;
+  padding: 15px;
+}
+
+.collapsible-actions {
+  margin-bottom: 15px;
+}
+
+#frontpage-category-names {
+
+  > h2 {
+    margin-bottom: 0;
+  }
+
+  .subcategories {
+    
+    $borda: 1px solid #d5d5d5;
+
+    .category {
+      border-right: $borda;
+      border-bottom: $borda;
+
+      &:first-child {
+        border-top: $borda;
+      }
+
+      .info {
+        padding: 5px 10px 5px 0;
+
+        .categoryname {
+          margin: 10px 0;
+          padding: 0 15px;
+          background-position-x: right;
+        }
+      }
+    }
+
+    .subcategories {
+      margin: 0 0 2rem 0;
+      
+      .category {
+        border-left: $borda;
+      }
+    }
   }
 }
 
@@ -186,10 +214,6 @@
   }
 }
 
-
-
-
-
 #page-login-index {
 
   .card {
@@ -198,8 +222,6 @@
 
       .card-header {
         border: 0;
-        background-color: $corPrimaria;
-        color: white;
       }
 
       .card-body {
@@ -211,3 +233,4 @@
   }
 }
 
+@import 'cursoCorTema';

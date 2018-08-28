@@ -1,0 +1,187 @@
+
+@mixin cursoCorTema($corPrimaria, $corEscura, $corAuxiliar) {
+
+  /* primarios */
+  
+  a {
+    color: $corAuxiliar;
+
+    &:hover {
+      color: darken($corAuxiliar, 10%);
+    }
+  }
+
+  .btn-default, .btn-secondary {
+    background-color: $corPrimaria;
+    color: white;
+
+    &:hover, &:active, &:focus, &:focus-within {
+      background-color: darken($corPrimaria, 10%) !important;
+      color: white;
+    }
+  }
+  
+  .btn-primary {
+    background-color: $corAuxiliar;
+    
+    &:hover, &:active, &:focus, &:focus-within {
+      background-color: darken($corAuxiliar, 10%) !important;
+      color: white;
+    }
+  }
+
+  /* barraNav */
+  nav.navbar {
+    background-color: $corEscura;
+    color: white;
+
+    a, i {
+      color: white;
+
+      &:visited {
+        color: white;
+      }
+
+      &:hover, &:active, &:focus, &:focus-within {
+        color: #cacaca;
+      }
+    }
+
+    button.nav-link {
+      background-color: $corPrimaria;
+      color: white;
+
+      &:visited {
+        color: white;
+      }
+
+      &:hover, &:active, &:focus, &:focus-within {
+        background-color: lighten($corPrimaria, 10%) !important;
+
+        i {
+          color: white;
+        }
+      }
+    }
+
+    .usermenu .login a {
+      color: lighten($corAuxiliar, 10%);
+
+      &:hover {
+        text-decoration: none;
+        color: lighten($corAuxiliar, 15%);
+      }
+    }
+
+    .popover-region-container {
+      color: #333;
+
+      a, i.fa {
+        color: $corAuxiliar;
+
+        &:hover, &:active, &:focus, &:focus-within {
+          color: darken($corAuxiliar, 10%);
+        }
+      }
+    }
+  }
+
+  /* barraLat */
+  #nav-drawer {
+
+    .list-group {
+
+      .list-group-item {
+        color: $corEscura;
+
+        &:hover {
+          background-color: $corAuxiliar;
+          color: white;
+        }
+
+        &.active {
+          background-color: $corPrimaria;
+          color: white;
+        }
+      }
+    }
+  }
+
+  /* cabecalho */
+  #page-header {
+    background-color: $corPrimaria;
+    color: white;
+
+    a {
+      color: white;
+
+      &:hover, &:active, &:focus, &:focus-within {
+        color: #cacaca;
+      }
+    }
+
+    .breadcrumb {
+
+      .breadcrumb-item:before {
+        color: white;
+      }
+    }
+  }
+
+
+  /* post.scss */
+
+  .dropdown-menu {
+    background-color: $corEscura;
+    color: white;
+
+    a {
+      color: white;
+
+      &:hover, &:active, &:focus, &:focus-within {
+        color: whiteSobrepor;
+      }
+    }
+
+    .dropdown-item, .dropdown-item a {
+      color: white;
+
+      &:hover, &:active, &:focus, &:focus-within {
+        background-color: $corPrimaria;
+        color: white !important;
+      }
+    }
+  }
+
+  #frontpage-category-names {
+
+    .subcategories {
+
+      .category {
+        border-left: 5px solid $corAuxiliar;
+      }
+    }
+  }
+
+  #page-login-index {
+
+    .card {
+
+      .card-block {
+
+        .card-header {
+          background-color: $corPrimaria;
+          color: white;
+        }
+      }
+    }
+  }
+}
+
+body {
+  @include cursoCorTema($corPrimaria: #1764AA, $corEscura: #1B3E6E, $corAuxiliar: #C04830);
+}
+
+body.category-184 {
+  @include cursoCorTema($corPrimaria: #11884E, $corEscura: #125E39, $corAuxiliar: #A91428);
+}

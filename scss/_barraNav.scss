@@ -1,41 +1,16 @@
 nav.navbar {
   padding: 0 1rem 0 0;
-  background-color: $corEscura;
   -webkit-box-shadow: none;
   box-shadow: none;
-  color: white;
-
-  a, i {
-    color: white;
-
-    &:visited {
-      color: white;
-    }
-
-    &:hover, &:active, &:focus, &:focus-within {
-      color: #cacaca;
-    }
-  }
 
   button.nav-link {
     height: 50px;
     padding-left: 2rem;
     border: none;
-    background-color: $corPrimaria;
-    color: white;
-
-    &:visited {
-      color: white;
-    }
 
     &:hover, &:active, &:focus, &:focus-within {
       -webkit-box-shadow: none;
       box-shadow: none;
-      background-color: lighten($corPrimaria, 10%) !important;
-
-      i {
-        color: white;
-      }
     }
   }
 
@@ -44,23 +19,9 @@ nav.navbar {
   }
 
   .usermenu .login a {
-    color: lighten($corAuxiliar, 10%);
 
     &:hover {
       text-decoration: none;
-      color: lighten($corAuxiliar, 15%);
-    }
-  }
-
-  .popover-region-container {
-    color: #333;
-
-    a, i.fa {
-      color: $corAuxiliar;
-      
-      &:hover, &:active, &:focus, &:focus-within {
-        color: darken($corAuxiliar, 10%);
-      }
     }
   }
 }
