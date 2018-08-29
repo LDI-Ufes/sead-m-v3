@@ -1,0 +1,719 @@
+ul.ctopics .tcsection {
+  margin: 0;
+}
+ul.ctopics .tcsection .left.side,
+ul.ctopics .tcsection .right.side {
+  display: none;
+}
+ul.ctopics .tcsection .content {
+  float: left;
+  margin: 25px 0 !important;
+}
+ul.ctopics .tcsection .content .sectionbody h4 {
+  margin: 0;
+}
+ul.ctopics .tcsection .content .sectionbody h4 .tc-medium {
+  float: left;
+  width: auto !important;
+  padding: 10px !important;
+  background-image: none !important;
+  font-size: 16px;
+  color: white;
+  cursor: pointer;
+}
+ul.ctopics .tcsection .content .sectionbody h4 .tc-medium.on {
+  background-color: #2598d5 !important;
+}
+ul.ctopics .tcsection .content .sectionbody h4 .tc-medium.on:hover {
+  background-color: #0073a5 !important;
+}
+ul.ctopics .tcsection .content .sectionbody h4 .tc-medium.on:after {
+  content: "\f0d7";
+}
+ul.ctopics .tcsection .content .sectionbody h4 .tc-medium.off:after {
+  content: "\f0d8";
+}
+ul.ctopics .tcsection .content .sectionbody h4 .tc-medium:after {
+  float: right;
+  margin-left: 8px;
+  font-family: FontAwesome;
+}
+.contentafterlink {
+  margin-top: 0 !important;
+}
+.course-content .topics h3 {
+  font-size: 21px;
+}
+.course-content .topics .section .summary .no-overflow {
+  color: #3a87ad;
+  line-height: 24px;
+  background: #d9edf7;
+  padding: 10px 20px;
+  border: 1px solid #bce8f1;
+  border-radius: 5px;
+  margin-bottom: 25px;
+}
+.course-content .topics .section .summary .no-overflow p {
+  color: #3a87ad;
+  line-height: 24px;
+  margin-bottom: 0;
+}
+.course-content .topics .section .activity .activityinstance a {
+  font-size: 18px;
+  font-family: arvoregular, Arial, Helvetica, sans-serif;
+  color: #656565;
+  line-height: 24px;
+}
+.course-content .topics .section .activity .activityinstance a img {
+  margin-right: 12px;
+}
+.course-content .topics .section .activity .activityinstance a .instancename {
+  vertical-align: top;
+  font-weight: bold;
+}
+.course-content .topics .section .activity .contentafterlink p {
+  color: #525252;
+}
+.course-content .topics .section .activity .availabilityinfo .no-overflow,
+.course-content .topics .section .activity .contentafterlink .no-overflow {
+  line-height: 22px;
+}
+.course_category_tree .category .numberofcourse {
+  font-size: 12px;
+  color: #fff;
+}
+
+.course-content #completionprogressid {
+  margin: 10px;
+  width: 100%;
+}
+.course-content ul.topics,
+.course-content ul.weeks,
+.course-content ul.ctopics {
+  clear: both;
+}
+.course-content ul.topics li.section.main,
+.course-content ul.weeks li.section.main,
+.course-content ul.ctopics li.section.main {
+  margin-top: 15px;
+  border: 1px solid #d5d5d5;
+}
+.course-content ul.topics li.section.main:first-child,
+.course-content ul.weeks li.section.main:first-child,
+.course-content ul.ctopics li.section.main:first-child {
+  margin-top: 0 !important;
+}
+.course-content ul.topics li.section.main .left.side,
+.course-content ul.weeks li.section.main .left.side,
+.course-content ul.ctopics li.section.main .left.side {
+  padding: 0;
+}
+.course-content ul.topics li.section.main .right.side,
+.course-content ul.weeks li.section.main .right.side,
+.course-content ul.ctopics li.section.main .right.side {
+  padding: 0;
+  width: 80px;
+  margin-right: -1px;
+}
+.course-content ul.topics li.section.main .right.side img.spacer,
+.course-content ul.weeks li.section.main .right.side img.spacer,
+.course-content ul.ctopics li.section.main .right.side img.spacer {
+  display: none;
+}
+.course-content ul.topics li.section.main .right.side .section_action_menu,
+.course-content ul.weeks li.section.main .right.side .section_action_menu,
+.course-content ul.ctopics li.section.main .right.side .section_action_menu {
+  /*padding: 10px;*/
+}
+.course-content ul.topics li.section.main .right.side .section_action_menu .textmenu,
+.course-content ul.weeks li.section.main .right.side .section_action_menu .textmenu,
+.course-content ul.ctopics li.section.main .right.side .section_action_menu .textmenu {
+  color: white;
+}
+.course-content ul.topics li.section.main .right.side .section_action_menu .textmenu .caret,
+.course-content ul.weeks li.section.main .right.side .section_action_menu .textmenu .caret,
+.course-content ul.ctopics li.section.main .right.side .section_action_menu .textmenu .caret {
+  border-top-color: white !important;
+}
+.course-content ul.topics li.section.main .content,
+.course-content ul.weeks li.section.main .content,
+.course-content ul.ctopics li.section.main .content {
+  margin: 0;
+}
+.course-content ul.topics li.section.main .content .summary,
+.course-content ul.weeks li.section.main .content .summary,
+.course-content ul.ctopics li.section.main .content .summary {
+  margin-left: 0;
+  padding: 0 25px;
+}
+.course-content ul.topics li.section.main .content .no-overflow,
+.course-content ul.weeks li.section.main .content .no-overflow,
+.course-content ul.ctopics li.section.main .content .no-overflow {
+  overflow: auto;
+  float: left;
+  width: 100%;
+  max-width: calc(100% - 40px);
+}
+.course-content ul.topics li.section.main .content .sectionname,
+.course-content ul.weeks li.section.main .content .sectionname,
+.course-content ul.ctopics li.section.main .content .sectionname {
+  height: 51px;
+  padding: 5px 0 5px 20px;
+  background-image: none;
+  background-color: #fafafa;
+  border-radius: 0;
+  border-bottom: 1px solid #d5d5d5;
+  margin: 0;
+  font-size: 19px !important;
+  line-height: 50px;
+}
+.course-content ul.topics li.section.main .content .sectionname:hover,
+.course-content ul.weeks li.section.main .content .sectionname:hover,
+.course-content ul.ctopics li.section.main .content .sectionname:hover {
+  background-color: #fafafa;
+}
+.course-content ul.topics li.section.main .content .sectionname.accesshide,
+.course-content ul.weeks li.section.main .content .sectionname.accesshide,
+.course-content ul.ctopics li.section.main .content .sectionname.accesshide {
+  position: relative;
+  left: 0;
+  z-index: -1;
+}
+.course-content ul.topics li.section.main .content .sectionname.accesshide span[data-itemtype="sectionname"],
+.course-content ul.weeks li.section.main .content .sectionname.accesshide span[data-itemtype="sectionname"],
+.course-content ul.ctopics li.section.main .content .sectionname.accesshide span[data-itemtype="sectionname"] {
+  display: none;
+}
+.course-content ul.topics li.section.main .content .sectionname span.the_toggle,
+.course-content ul.weeks li.section.main .content .sectionname span.the_toggle,
+.course-content ul.ctopics li.section.main .content .sectionname span.the_toggle,
+.course-content ul.topics li.section.main .content .sectionname span.the_toggle:hover,
+.course-content ul.weeks li.section.main .content .sectionname span.the_toggle:hover,
+.course-content ul.ctopics li.section.main .content .sectionname span.the_toggle:hover,
+.course-content ul.topics li.section.main .content .sectionname span.toggle_open,
+.course-content ul.weeks li.section.main .content .sectionname span.toggle_open,
+.course-content ul.ctopics li.section.main .content .sectionname span.toggle_open,
+.course-content ul.topics li.section.main .content .sectionname span.toggle_open:hover,
+.course-content ul.weeks li.section.main .content .sectionname span.toggle_open:hover,
+.course-content ul.ctopics li.section.main .content .sectionname span.toggle_open:hover,
+.course-content ul.topics li.section.main .content .sectionname span.toggle_closed,
+.course-content ul.weeks li.section.main .content .sectionname span.toggle_closed,
+.course-content ul.ctopics li.section.main .content .sectionname span.toggle_closed,
+.course-content ul.topics li.section.main .content .sectionname span.toggle_closed:hover,
+.course-content ul.weeks li.section.main .content .sectionname span.toggle_closed:hover,
+.course-content ul.ctopics li.section.main .content .sectionname span.toggle_closed:hover {
+  background-image: none !important;
+  padding-left: 0 !important;
+  padding-right: 15px !important;
+}
+.course-content ul.topics li.section.main .content .sectionname .toggle_open .sectionname:after,
+.course-content ul.weeks li.section.main .content .sectionname .toggle_open .sectionname:after,
+.course-content ul.ctopics li.section.main .content .sectionname .toggle_open .sectionname:after {
+  float: right;
+  font-family: FontAwesome;
+  content: "\f0d8";
+}
+.course-content ul.topics li.section.main .content .sectionname .toggle_closed .sectionname:after,
+.course-content ul.weeks li.section.main .content .sectionname .toggle_closed .sectionname:after,
+.course-content ul.ctopics li.section.main .content .sectionname .toggle_closed .sectionname:after {
+  float: right;
+  font-family: FontAwesome;
+  content: "\f0d7";
+}
+.course-content ul.topics li.section.main .content .sectionname a:hover,
+.course-content ul.weeks li.section.main .content .sectionname a:hover,
+.course-content ul.ctopics li.section.main .content .sectionname a:hover {
+  text-decoration: none;
+}
+.course-content ul.topics li.section.main .content ul.section.img-text,
+.course-content ul.weeks li.section.main .content ul.section.img-text,
+.course-content ul.ctopics li.section.main .content ul.section.img-text {
+  padding: 0 15px;
+}
+.course-content ul.topics li.section.main[aria-label="Comunicações Gerais"],
+.course-content ul.weeks li.section.main[aria-label="Comunicações Gerais"],
+.course-content ul.ctopics li.section.main[aria-label="Comunicações Gerais"] {
+  border: none;
+}
+.course-content ul.topics li.section.main[aria-label="Comunicações Gerais"] .left.side,
+.course-content ul.weeks li.section.main[aria-label="Comunicações Gerais"] .left.side,
+.course-content ul.ctopics li.section.main[aria-label="Comunicações Gerais"] .left.side,
+.course-content ul.topics li.section.main[aria-label="Comunicações Gerais"] .right.side,
+.course-content ul.weeks li.section.main[aria-label="Comunicações Gerais"] .right.side,
+.course-content ul.ctopics li.section.main[aria-label="Comunicações Gerais"] .right.side {
+  display: none;
+}
+.course-content ul.topics li.section.main[aria-label="Comunicações Gerais"] .content,
+.course-content ul.weeks li.section.main[aria-label="Comunicações Gerais"] .content,
+.course-content ul.ctopics li.section.main[aria-label="Comunicações Gerais"] .content {
+  padding: 0 !important;
+  margin: 0 !important;
+  border: 1px solid #d5d5d5;
+  background-color: #fafafa;
+  float: left;
+  width: 100%;
+}
+.course-content ul.topics li.section.main[aria-label="Comunicações Gerais"] .content h3.section-title,
+.course-content ul.weeks li.section.main[aria-label="Comunicações Gerais"] .content h3.section-title,
+.course-content ul.ctopics li.section.main[aria-label="Comunicações Gerais"] .content h3.section-title,
+.course-content ul.topics li.section.main[aria-label="Comunicações Gerais"] .content h3.sectionname,
+.course-content ul.weeks li.section.main[aria-label="Comunicações Gerais"] .content h3.sectionname,
+.course-content ul.ctopics li.section.main[aria-label="Comunicações Gerais"] .content h3.sectionname {
+  float: left;
+  margin: 0;
+  width: calc(100% - 30px);
+  border-bottom: 1px solid #d6d6d6;
+  background-color: #fafafa;
+  padding: 0 15px;
+  font-size: 20px;
+  color: #656565;
+}
+.course-content ul.topics li.section.main[aria-label="Comunicações Gerais"] .content ul.section.img-text,
+.course-content ul.weeks li.section.main[aria-label="Comunicações Gerais"] .content ul.section.img-text,
+.course-content ul.ctopics li.section.main[aria-label="Comunicações Gerais"] .content ul.section.img-text {
+  float: left;
+  width: calc(100% - 58px);
+  margin: 1em;
+}
+.course-content ul.topics li.section.main .section-handle,
+.course-content ul.weeks li.section.main .section-handle,
+.course-content ul.ctopics li.section.main .section-handle,
+.course-content ul.topics li.section.main .section_action_menu,
+.course-content ul.weeks li.section.main .section_action_menu,
+.course-content ul.ctopics li.section.main .section_action_menu {
+  padding: 5px 0;
+  width: auto;
+  min-width: 41px;
+  height: 50px;
+  background-color: #fafafa;
+  border-bottom: 1px solid #d5d5d5;
+}
+.course-content ul.topics li.section.main .section-handle,
+.course-content ul.weeks li.section.main .section-handle,
+.course-content ul.ctopics li.section.main .section-handle {
+  position: relative;
+  margin-right: 10px;
+  /*margin-left: -1px;*/
+  border-right: 1px solid #d5d5d5;
+}
+.course-content ul.topics li.section.main .section-handle:before,
+.course-content ul.weeks li.section.main .section-handle:before,
+.course-content ul.ctopics li.section.main .section-handle:before {
+  display: none;
+}
+.course-content ul.topics li.section.main .section-handle img,
+.course-content ul.weeks li.section.main .section-handle img,
+.course-content ul.ctopics li.section.main .section-handle img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: inline-block;
+  width: 12px;
+}
+.course-content ul.topics li.section.main .tceditsection,
+.course-content ul.weeks li.section.main .tceditsection,
+.course-content ul.ctopics li.section.main .tceditsection {
+  display: none;
+}
+.course-content ul.topics li.section.main .section_action_menu,
+.course-content ul.weeks li.section.main .section_action_menu,
+.course-content ul.ctopics li.section.main .section_action_menu {
+  position: relative;
+  float: left;
+  padding: 5px;
+  border-left: 1px solid #d5d5d5;
+}
+.course-content ul.topics li.section.main .section_action_menu .section-actions,
+.course-content ul.weeks li.section.main .section_action_menu .section-actions,
+.course-content ul.ctopics li.section.main .section_action_menu .section-actions {
+  line-height: 50px;
+}
+.course-content ul.topics li.section.main .section_action_menu .section-actions a.toggle-display.textmenu,
+.course-content ul.weeks li.section.main .section_action_menu .section-actions a.toggle-display.textmenu,
+.course-content ul.ctopics li.section.main .section_action_menu .section-actions a.toggle-display.textmenu {
+  color: #777;
+}
+.course-content ul.topics li.section.main .section_action_menu .section-actions a.toggle-display.textmenu .caret,
+.course-content ul.weeks li.section.main .section_action_menu .section-actions a.toggle-display.textmenu .caret,
+.course-content ul.ctopics li.section.main .section_action_menu .section-actions a.toggle-display.textmenu .caret {
+  border-top-color: #777 !important;
+}
+.course-content ul.topics li.section.main.current,
+.course-content ul.weeks li.section.main.current,
+.course-content ul.ctopics li.section.main.current {
+  background-color: white;
+  border-width: 2px;
+}
+.course-content ul.topics li.section.main.current .section-handle,
+.course-content ul.weeks li.section.main.current .section-handle,
+.course-content ul.ctopics li.section.main.current .section-handle,
+.course-content ul.topics li.section.main.current .section_action_menu,
+.course-content ul.weeks li.section.main.current .section_action_menu,
+.course-content ul.ctopics li.section.main.current .section_action_menu {
+  border-bottom: 0;
+}
+.course-content ul.topics li.section.main.current .section_action_menu a.toggle-display.textmenu,
+.course-content ul.weeks li.section.main.current .section_action_menu a.toggle-display.textmenu,
+.course-content ul.ctopics li.section.main.current .section_action_menu a.toggle-display.textmenu {
+  color: #fff;
+}
+.course-content ul.topics li.section.main.current .section_action_menu a.toggle-display.textmenu .caret,
+.course-content ul.weeks li.section.main.current .section_action_menu a.toggle-display.textmenu .caret,
+.course-content ul.ctopics li.section.main.current .section_action_menu a.toggle-display.textmenu .caret {
+  border-top-color: #fff !important;
+}
+.course-content ul.topics li.section.main.current .content .sectionname,
+.course-content ul.weeks li.section.main.current .content .sectionname,
+.course-content ul.ctopics li.section.main.current .content .sectionname,
+.course-content ul.topics li.section.main.current .content .sectionname:hover,
+.course-content ul.weeks li.section.main.current .content .sectionname:hover,
+.course-content ul.ctopics li.section.main.current .content .sectionname:hover {
+  border-radius: 0;
+  color: white;
+  border-bottom: none;
+}
+.course-content ul.topics li.section.main.current .content .sectionname:hover,
+.course-content ul.weeks li.section.main.current .content .sectionname:hover,
+.course-content ul.ctopics li.section.main.current .content .sectionname:hover,
+.course-content ul.topics li.section.main.current .content .sectionname:hover:hover,
+.course-content ul.weeks li.section.main.current .content .sectionname:hover:hover,
+.course-content ul.ctopics li.section.main.current .content .sectionname:hover:hover {
+  color: white;
+}
+.course-content ul.topics li.section.main.current .content .sectionname span.the_toggle,
+.course-content ul.weeks li.section.main.current .content .sectionname span.the_toggle,
+.course-content ul.ctopics li.section.main.current .content .sectionname span.the_toggle,
+.course-content ul.topics li.section.main.current .content .sectionname:hover span.the_toggle,
+.course-content ul.weeks li.section.main.current .content .sectionname:hover span.the_toggle,
+.course-content ul.ctopics li.section.main.current .content .sectionname:hover span.the_toggle {
+  background-image: none;
+  color: white;
+}
+.course-content ul.topics li.section.main.current .content .sectionname span.the_toggle:hover,
+.course-content ul.weeks li.section.main.current .content .sectionname span.the_toggle:hover,
+.course-content ul.ctopics li.section.main.current .content .sectionname span.the_toggle:hover,
+.course-content ul.topics li.section.main.current .content .sectionname:hover span.the_toggle:hover,
+.course-content ul.weeks li.section.main.current .content .sectionname:hover span.the_toggle:hover,
+.course-content ul.ctopics li.section.main.current .content .sectionname:hover span.the_toggle:hover {
+  color: #dadada;
+}
+.course-content ul.topics li.section.main.current .content .sectionname a,
+.course-content ul.weeks li.section.main.current .content .sectionname a,
+.course-content ul.ctopics li.section.main.current .content .sectionname a,
+.course-content ul.topics li.section.main.current .content .sectionname:hover a,
+.course-content ul.weeks li.section.main.current .content .sectionname:hover a,
+.course-content ul.ctopics li.section.main.current .content .sectionname:hover a,
+.course-content ul.topics li.section.main.current .content .sectionname a:hover,
+.course-content ul.weeks li.section.main.current .content .sectionname a:hover,
+.course-content ul.ctopics li.section.main.current .content .sectionname a:hover,
+.course-content ul.topics li.section.main.current .content .sectionname:hover a:hover,
+.course-content ul.weeks li.section.main.current .content .sectionname:hover a:hover,
+.course-content ul.ctopics li.section.main.current .content .sectionname:hover a:hover,
+.course-content ul.topics li.section.main.current .content .sectionname a:visited,
+.course-content ul.weeks li.section.main.current .content .sectionname a:visited,
+.course-content ul.ctopics li.section.main.current .content .sectionname a:visited,
+.course-content ul.topics li.section.main.current .content .sectionname:hover a:visited,
+.course-content ul.weeks li.section.main.current .content .sectionname:hover a:visited,
+.course-content ul.ctopics li.section.main.current .content .sectionname:hover a:visited,
+.course-content ul.topics li.section.main.current .content .sectionname a:active,
+.course-content ul.weeks li.section.main.current .content .sectionname a:active,
+.course-content ul.ctopics li.section.main.current .content .sectionname a:active,
+.course-content ul.topics li.section.main.current .content .sectionname:hover a:active,
+.course-content ul.weeks li.section.main.current .content .sectionname:hover a:active,
+.course-content ul.ctopics li.section.main.current .content .sectionname:hover a:active {
+  color: white;
+}
+.course-content ul.topics li.section.main.orphaned .section-handle,
+.course-content ul.weeks li.section.main.orphaned .section-handle,
+.course-content ul.ctopics li.section.main.orphaned .section-handle,
+.course-content ul.topics li.section.main.orphaned .section_action_menu,
+.course-content ul.weeks li.section.main.orphaned .section_action_menu,
+.course-content ul.ctopics li.section.main.orphaned .section_action_menu {
+  margin-top: -1px;
+  padding: 5px 0;
+  width: auto;
+  min-width: 41px;
+  height: 50px;
+  background-color: #fafafa;
+  border: 1px solid #d5d5d5;
+}
+.course-content ul.topics li.section.main.orphaned .section-handle,
+.course-content ul.weeks li.section.main.orphaned .section-handle,
+.course-content ul.ctopics li.section.main.orphaned .section-handle {
+  position: relative;
+  margin-right: 10px;
+  margin-left: -1px;
+}
+.course-content ul.topics li.section.main.orphaned .section-handle img,
+.course-content ul.weeks li.section.main.orphaned .section-handle img,
+.course-content ul.ctopics li.section.main.orphaned .section-handle img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.course-content ul.topics li.section.main.orphaned .section_action_menu,
+.course-content ul.weeks li.section.main.orphaned .section_action_menu,
+.course-content ul.ctopics li.section.main.orphaned .section_action_menu {
+  position: relative;
+  margin-right: -1px;
+  padding: 5px;
+}
+.course-content ul.topics li.section.main.orphaned .section_action_menu .tceditsection,
+.course-content ul.weeks li.section.main.orphaned .section_action_menu .tceditsection,
+.course-content ul.ctopics li.section.main.orphaned .section_action_menu .tceditsection {
+  display: none;
+}
+.course-content ul.topics li.section.main.orphaned .section_action_menu .section-actions,
+.course-content ul.weeks li.section.main.orphaned .section_action_menu .section-actions,
+.course-content ul.ctopics li.section.main.orphaned .section_action_menu .section-actions {
+  line-height: 50px;
+}
+.course-content ul.topics li.section.main.orphaned .section_action_menu .section-actions a.toggle-display.textmenu,
+.course-content ul.weeks li.section.main.orphaned .section_action_menu .section-actions a.toggle-display.textmenu,
+.course-content ul.ctopics li.section.main.orphaned .section_action_menu .section-actions a.toggle-display.textmenu {
+  color: #777;
+}
+.course-content ul.topics li.section.main.orphaned .section_action_menu .section-actions a.toggle-display.textmenu .caret,
+.course-content ul.weeks li.section.main.orphaned .section_action_menu .section-actions a.toggle-display.textmenu .caret,
+.course-content ul.ctopics li.section.main.orphaned .section_action_menu .section-actions a.toggle-display.textmenu .caret {
+  border-top-color: #777 !important;
+}
+.course-content ul.topics li.section.main.orphaned .content,
+.course-content ul.weeks li.section.main.orphaned .content,
+.course-content ul.ctopics li.section.main.orphaned .content {
+  margin: 0 40px 0 0;
+}
+.course-content ul.topics li.section.main.orphaned .content .sectionname,
+.course-content ul.weeks li.section.main.orphaned .content .sectionname,
+.course-content ul.ctopics li.section.main.orphaned .content .sectionname {
+  height: auto;
+  margin: 0;
+  background-color: #fafafa;
+  border-bottom: 1px solid #d5d5d5;
+  color: #777;
+  font-style: normal;
+  font-size: 19px;
+  line-height: 50px;
+  padding-left: 20px;
+}
+.course-content ul.topics li.section.main.orphaned .content .sectionname .sectionname:after,
+.course-content ul.weeks li.section.main.orphaned .content .sectionname .sectionname:after,
+.course-content ul.ctopics li.section.main.orphaned .content .sectionname .sectionname:after {
+  display: none;
+}
+
+ul.ctopics li.section.main .content .sectionhead {
+  background-image: none;
+  background-color: #fafafa !important;
+  border-radius: 0 !important;
+  border-bottom: 1px solid #d5d5d5;
+  padding: 0 15px;
+  /*width: ~"calc(100% - 68px)";*/
+  width: calc(100% - 30px);
+  height: 61px;
+}
+
+ul.ctopics li.section.main .content .sectionhead:hover {
+  background-color: #fafafa;
+}
+
+ul.ctopics li.section.main .content .sectionhead span.the_toggle {
+  background-image: none;
+  color: white;
+  padding: 6px 15px 6px 0;
+  margin: 0 4px;
+}
+
+ul.ctopics li.section.main .content .sectionhead span.the_toggle:hover {
+  color: #dadada;
+}
+
+ul.ctopics li.section.main .content .sectionhead span.the_toggle,
+ul.ctopics li.section.main .content .sectionhead span.the_toggle:hover,
+ul.ctopics li.section.main .content .sectionhead span.toggle_open,
+ul.ctopics li.section.main .content .sectionhead span.toggle_open:hover,
+ul.ctopics li.section.main .content .sectionhead span.toggle_closed,
+ul.ctopics li.section.main .content .sectionhead span.toggle_closed:hover {
+  background-image: none !important;
+  /* padding-left: 0;
+        padding-right: 15px;*/
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+ul.ctopics li.section.main .content .sectionhead .toggle_open .sectionname:after {
+  float: right;
+  font-family: FontAwesome;
+  content: "\f0d8";
+}
+
+ul.ctopics li.section.main .content .sectionhead .toggle_closed .sectionname:after {
+  float: right;
+  font-family: FontAwesome;
+  content: "\f0d7";
+}
+
+ul.ctopics li.section.main .content .sectionhead .sectionname {
+  /*margin: 0 -20px;*/
+  font-size: 19px !important;
+  border-bottom: none;
+  line-height: 40px;
+  height: auto;
+  color: #000 !important;
+  padding: 0;
+  margin: 4px;
+}
+
+ul.ctopics li.section.main .content .sectionhead .sectionname:hover {
+  color: #888;
+}
+
+ul.ctopics li.section.main .content .sectionhead .sectionname a,
+ul.ctopics li.section.main .content .sectionhead .sectionname a:hover,
+ul.ctopics li.section.main .content .sectionhead .sectionname a:visited,
+ul.ctopics li.section.main .content .sectionhead .sectionname a:active {
+  /*color: white;*/
+}
+
+ul.ctopics li.section.main .sectionbody {
+  /*margin: 0 20px;*/
+}
+
+ul.ctopics li.section.main .sectionbody ul.section li.activity {
+  padding-bottom: 20px;
+}
+
+ul.ctopics li.section.main .sectionbody .section.img-text {
+  margin: 1em 15px;
+}
+
+ul.ctopics li.section.main .sectionbody .section.img-text ul.section li.activity {
+  padding-bottom: 20px;
+}
+
+ul.ctopics li.section.main.current .sectionhead {
+  border-radius: 0 !important;
+  color: white;
+  border-bottom: none;
+}
+
+ul.ctopics li.section.main.current .sectionhead:hover {
+  color: white;
+}
+
+ul.ctopics li.section.main.current .sectionhead .sectionname {
+  color: white !important;
+}
+
+ul.ctopics li.section.main.current .sectionhead .sectionname:hover {
+  color: #dadada;
+}
+
+ul.ctopics li.section.main.sectiondraggable .sectionhead {
+  height: 60px;
+}
+
+ul.ctopics li.section.main.sectiondraggable .sectionhead .sectionname:after {
+  margin-right: 25px;
+}
+
+body #page .course-content ul.topics li.section.main.current,
+body #page .course-content ul.weeks li.section.main.current,
+body #page .course-content ul.ctopics li.section.main.current {
+  border-color: #0e64ac;
+}
+body #page .course-content ul.topics li.section.main.current .section-handle,
+body #page .course-content ul.weeks li.section.main.current .section-handle,
+body #page .course-content ul.ctopics li.section.main.current .section-handle,
+body #page .course-content ul.topics li.section.main.current .section_action_menu,
+body #page .course-content ul.weeks li.section.main.current .section_action_menu,
+body #page .course-content ul.ctopics li.section.main.current .section_action_menu {
+  background-color: #0a497d;
+  border: 1px solid #0a497d;
+}
+body #page .course-content ul.topics li.section.main.current .content .sectionname,
+body #page .course-content ul.weeks li.section.main.current .content .sectionname,
+body #page .course-content ul.ctopics li.section.main.current .content .sectionname,
+body #page .course-content ul.topics li.section.main.current .content .sectionname:hover,
+body #page .course-content ul.weeks li.section.main.current .content .sectionname:hover,
+body #page .course-content ul.ctopics li.section.main.current .content .sectionname:hover {
+  background-color: #0e64ac;
+}
+body #page .course-content ul.topics li.section.main.current .content .sectionname:hover,
+body #page .course-content ul.weeks li.section.main.current .content .sectionname:hover,
+body #page .course-content ul.ctopics li.section.main.current .content .sectionname:hover,
+body #page .course-content ul.topics li.section.main.current .content .sectionname:hover:hover,
+body #page .course-content ul.weeks li.section.main.current .content .sectionname:hover:hover,
+body #page .course-content ul.ctopics li.section.main.current .content .sectionname:hover:hover {
+  background: #0e64ac;
+}
+body #page ul.ctopics li.section.main.current .sectionhead {
+  background-color: #0e64ac !important;
+}
+body #page ul.ctopics li.section.main.current .sectionhead:hover {
+  background: #0e64ac;
+}
+body #page ul.ctopics li.section.main .content .sectionhead a {
+  color: #d25c41;
+}
+body #page ul.ctopics li.section.main .content .sectionhead a:hover {
+  color: #b5452b;
+  text-decoration: none;
+}
+body #page ul.ctopics .tcsection .content .sectionbody h4 .tc-medium.off {
+  background-color: #d25c41 !important;
+}
+body #page ul.ctopics .tcsection .content .sectionbody h4 .tc-medium.off:hover {
+  background-color: #b5452b !important;
+}
+body.category-2 #page .course-content ul.topics li.section.main.current,
+body.category-2 #page .course-content ul.weeks li.section.main.current,
+body.category-2 #page .course-content ul.ctopics li.section.main.current {
+  border-color: #6d4c41;
+}
+body.category-2 #page .course-content ul.topics li.section.main.current .section-handle,
+body.category-2 #page .course-content ul.weeks li.section.main.current .section-handle,
+body.category-2 #page .course-content ul.ctopics li.section.main.current .section-handle,
+body.category-2 #page .course-content ul.topics li.section.main.current .section_action_menu,
+body.category-2 #page .course-content ul.weeks li.section.main.current .section_action_menu,
+body.category-2 #page .course-content ul.ctopics li.section.main.current .section_action_menu {
+  background-color: #4d362e;
+  border: 1px solid #4d362e;
+}
+body.category-2 #page .course-content ul.topics li.section.main.current .content .sectionname,
+body.category-2 #page .course-content ul.weeks li.section.main.current .content .sectionname,
+body.category-2 #page .course-content ul.ctopics li.section.main.current .content .sectionname,
+body.category-2 #page .course-content ul.topics li.section.main.current .content .sectionname:hover,
+body.category-2 #page .course-content ul.weeks li.section.main.current .content .sectionname:hover,
+body.category-2 #page .course-content ul.ctopics li.section.main.current .content .sectionname:hover {
+  background-color: #6d4c41;
+}
+body.category-2 #page .course-content ul.topics li.section.main.current .content .sectionname:hover,
+body.category-2 #page .course-content ul.weeks li.section.main.current .content .sectionname:hover,
+body.category-2 #page .course-content ul.ctopics li.section.main.current .content .sectionname:hover,
+body.category-2 #page .course-content ul.topics li.section.main.current .content .sectionname:hover:hover,
+body.category-2 #page .course-content ul.weeks li.section.main.current .content .sectionname:hover:hover,
+body.category-2 #page .course-content ul.ctopics li.section.main.current .content .sectionname:hover:hover {
+  background: #6d4c41;
+}
+body.category-2 #page ul.ctopics li.section.main.current .sectionhead {
+  background-color: #6d4c41 !important;
+}
+body.category-2 #page ul.ctopics li.section.main.current .sectionhead:hover {
+  background: #6d4c41;
+}
+body.category-2 #page ul.ctopics li.section.main .content .sectionhead a {
+  color: #6d4c41;
+}
+body.category-2 #page ul.ctopics li.section.main .content .sectionhead a:hover {
+  color: #4d362e;
+  text-decoration: none;
+}
+body.category-2 #page ul.ctopics .tcsection .content .sectionbody h4 .tc-medium.off {
+  background-color: #6d4c41 !important;
+}
+body.category-2 #page ul.ctopics .tcsection .content .sectionbody h4 .tc-medium.off:hover {
+  background-color: #4d362e !important;
+}

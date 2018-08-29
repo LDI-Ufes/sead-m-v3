@@ -165,7 +165,7 @@
   }
 
   .subcategories {
-    
+
     $borda: 1px solid #d5d5d5;
 
     .category {
@@ -174,6 +174,10 @@
 
       &:first-child {
         border-top: $borda;
+      }
+
+      &.dimmed_category {
+        border-left-color: #868e96;
       }
 
       .info {
@@ -189,7 +193,7 @@
 
     .subcategories {
       margin: 0 0 2rem 0;
-      
+
       .category {
         border-left: $borda;
       }
@@ -234,3 +238,4 @@
 }
 
 @import 'cursoCorTema';
+@import 'cursoFormato';
