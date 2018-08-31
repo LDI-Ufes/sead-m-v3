@@ -1,3 +1,4 @@
+@import 'limpaBoost';
 @import 'primarios';
 @import 'barraNav';
 @import 'barraLat';
@@ -150,7 +151,8 @@
 }
 
 #page-course-index-category .generalbox.info {
-  border: 1px solid #ddd;
+  /*border: 1px solid #ddd;*/
+  border: none;
   padding: 15px;
 }
 
@@ -158,44 +160,75 @@
   margin-bottom: 15px;
 }
 
-#frontpage-category-names {
+#frontpage-category-names > h2 {
+  margin-bottom: 0;
+}
 
-  > h2 {
-    margin-bottom: 0;
-  }
+.course_category_tree {
+  margin-top: 2rem;
 
-  .subcategories {
+  .content {
 
-    $borda: 1px solid #d5d5d5;
+    .subcategories {
 
-    .category {
-      border-right: $borda;
-      border-bottom: $borda;
+      $borda: 1px solid #d5d5d5;
 
-      &:first-child {
-        border-top: $borda;
+      .category {
+        border-right: $borda;
+        border-bottom: $borda;
+
+        &:first-child {
+          border-top: $borda;
+        }
+
+        &.dimmed_category {
+          border-left-color: #d5d5d5;
+        }
+
+        > .info {
+          padding: 5px 10px 5px 0;
+
+          > .categoryname {
+            margin: 10px 0;
+            padding: 0 15px;
+            background-position-x: right;
+          }
+        }
       }
 
-      &.dimmed_category {
-        border-left-color: #868e96;
-      }
+      .subcategories {
+        margin: 0 0 2rem 0;
 
-      .info {
-        padding: 5px 10px 5px 0;
-
-        .categoryname {
-          margin: 10px 0;
-          padding: 0 15px;
-          background-position-x: right;
+        .category {
+          border-left: $borda;
         }
       }
     }
 
-    .subcategories {
-      margin: 0 0 2rem 0;
+    .courses {
+      margin-bottom: 2rem;
 
-      .category {
-        border-left: $borda;
+      .coursebox {
+
+        &:first-child {
+          border-top: 1px solid #d5d5d5;
+        }
+
+        border-width: 0 1px 1px 1px;
+        border-style: solid;
+        border-color: #d5d5d5;
+        background-color: white !important;
+
+        .content {
+
+          .summary {
+            float: inherit;
+          }
+
+          .teachers {
+            margin-top: 0;
+          }
+        }
       }
     }
   }
@@ -203,10 +236,11 @@
 
 .course-content {
 
-  ul.topics {
+  ul.topics,
+  ul.weeks {
 
     li.section {
-      padding-top: 2rem;
+      /*padding-top: 2rem;*/
 
       .right.side {
 
@@ -214,7 +248,16 @@
           margin-bottom: 1.5rem;
         }
       }
+      
+      .summary {
+        margin-top: 2rem;
+      }
     }    
+  }
+
+  li[aria-label="General"],
+  li[aria-label="Geral"] {
+    border: none !important;
   }
 }
 

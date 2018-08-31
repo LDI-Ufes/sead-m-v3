@@ -1,43 +1,57 @@
 ul.ctopics .tcsection {
   margin: 0;
+
+
+  .left.side, .right.side {
+    display: none;
+  }
+
+  .content {
+    float: left;
+    margin: 25px 0 !important;
+
+    .sectionbody h4 {
+      margin: 0;
+
+      .tc-medium {
+        float: left;
+        width: auto !important;
+        padding: 10px !important;
+        background-image: none !important;
+        font-size: 16px;
+        color: white;
+        cursor: pointer;
+
+        &:after {
+          float: right;
+          margin-left: 8px;
+          font-family: FontAwesome;
+        }
+
+        &.on {
+          background-color: $azul !important;
+
+          &:hover {
+            background-color: darken($azul, 5%) !important;
+          }
+
+          &:after {
+            content: "\f0d7";
+          }
+        }
+
+        &.off {
+          
+          &:after {
+            content: "\f0d8";
+          }
+        }
+      }
+    }
+  }
 }
-ul.ctopics .tcsection .left.side,
-ul.ctopics .tcsection .right.side {
-  display: none;
-}
-ul.ctopics .tcsection .content {
-  float: left;
-  margin: 25px 0 !important;
-}
-ul.ctopics .tcsection .content .sectionbody h4 {
-  margin: 0;
-}
-ul.ctopics .tcsection .content .sectionbody h4 .tc-medium {
-  float: left;
-  width: auto !important;
-  padding: 10px !important;
-  background-image: none !important;
-  font-size: 16px;
-  color: white;
-  cursor: pointer;
-}
-ul.ctopics .tcsection .content .sectionbody h4 .tc-medium.on {
-  background-color: #2598d5 !important;
-}
-ul.ctopics .tcsection .content .sectionbody h4 .tc-medium.on:hover {
-  background-color: #0073a5 !important;
-}
-ul.ctopics .tcsection .content .sectionbody h4 .tc-medium.on:after {
-  content: "\f0d7";
-}
-ul.ctopics .tcsection .content .sectionbody h4 .tc-medium.off:after {
-  content: "\f0d8";
-}
-ul.ctopics .tcsection .content .sectionbody h4 .tc-medium:after {
-  float: right;
-  margin-left: 8px;
-  font-family: FontAwesome;
-}
+
+
 .contentafterlink {
   margin-top: 0 !important;
 }
@@ -139,51 +153,39 @@ ul.ctopics .tcsection .content .sectionbody h4 .tc-medium:after {
 .course-content ul.weeks li.section.main .content,
 .course-content ul.ctopics li.section.main .content {
   margin: 0;
+
+  .summary {
+    margin-left: 0;
+    padding: 0 25px;
+  }
+
+  .no-overflow {
+    overflow: auto;
+    float: left;
+    width: 100%;
+  }
+
+  .sectionname {
+    background-image: none;
+    border-radius: 0;
+    padding: 0 15px;
+
+    &.accesshide {
+      position: relative;
+      left: 0;
+      z-index: -1;
+
+      span[data-itemtype="sectionname"] {
+        display: none;
+      }
+    }
+  }
+  
+  .section_availability {
+    padding: 0 15px;
+  }
 }
-.course-content ul.topics li.section.main .content .summary,
-.course-content ul.weeks li.section.main .content .summary,
-.course-content ul.ctopics li.section.main .content .summary {
-  margin-left: 0;
-  padding: 0 25px;
-}
-.course-content ul.topics li.section.main .content .no-overflow,
-.course-content ul.weeks li.section.main .content .no-overflow,
-.course-content ul.ctopics li.section.main .content .no-overflow {
-  overflow: auto;
-  float: left;
-  width: 100%;
-  max-width: calc(100% - 40px);
-}
-.course-content ul.topics li.section.main .content .sectionname,
-.course-content ul.weeks li.section.main .content .sectionname,
-.course-content ul.ctopics li.section.main .content .sectionname {
-  height: 51px;
-  padding: 5px 0 5px 20px;
-  background-image: none;
-  background-color: #fafafa;
-  border-radius: 0;
-  border-bottom: 1px solid #d5d5d5;
-  margin: 0;
-  font-size: 19px !important;
-  line-height: 50px;
-}
-.course-content ul.topics li.section.main .content .sectionname:hover,
-.course-content ul.weeks li.section.main .content .sectionname:hover,
-.course-content ul.ctopics li.section.main .content .sectionname:hover {
-  background-color: #fafafa;
-}
-.course-content ul.topics li.section.main .content .sectionname.accesshide,
-.course-content ul.weeks li.section.main .content .sectionname.accesshide,
-.course-content ul.ctopics li.section.main .content .sectionname.accesshide {
-  position: relative;
-  left: 0;
-  z-index: -1;
-}
-.course-content ul.topics li.section.main .content .sectionname.accesshide span[data-itemtype="sectionname"],
-.course-content ul.weeks li.section.main .content .sectionname.accesshide span[data-itemtype="sectionname"],
-.course-content ul.ctopics li.section.main .content .sectionname.accesshide span[data-itemtype="sectionname"] {
-  display: none;
-}
+
 .course-content ul.topics li.section.main .content .sectionname span.the_toggle,
 .course-content ul.weeks li.section.main .content .sectionname span.the_toggle,
 .course-content ul.ctopics li.section.main .content .sectionname span.the_toggle,
@@ -293,7 +295,6 @@ ul.ctopics .tcsection .content .sectionbody h4 .tc-medium:after {
 .course-content ul.ctopics li.section.main .section-handle {
   position: relative;
   margin-right: 10px;
-  /*margin-left: -1px;*/
   border-right: 1px solid #d5d5d5;
 }
 .course-content ul.topics li.section.main .section-handle:before,
@@ -509,76 +510,76 @@ ul.ctopics li.section.main .content .sectionhead {
   background-color: #fafafa !important;
   border-radius: 0 !important;
   border-bottom: 1px solid #d5d5d5;
-  padding: 0 15px;
-  /*width: ~"calc(100% - 68px)";*/
-  width: calc(100% - 30px);
-  height: 61px;
-}
 
-ul.ctopics li.section.main .content .sectionhead:hover {
-  background-color: #fafafa;
-}
+  .the_toggle {
+    display: inline-flex;
+    flex-flow: column;
+    width: 100%;
 
-ul.ctopics li.section.main .content .sectionhead span.the_toggle {
-  background-image: none;
-  color: white;
-  padding: 6px 15px 6px 0;
-  margin: 0 4px;
-}
+    .section_availability {
 
-ul.ctopics li.section.main .content .sectionhead span.the_toggle:hover {
-  color: #dadada;
-}
+      .availabilityinfo {
+        margin: 5px 0 10px 0;   
+        font-weight: normal;
+        color: black;
 
-ul.ctopics li.section.main .content .sectionhead span.the_toggle,
-ul.ctopics li.section.main .content .sectionhead span.the_toggle:hover,
-ul.ctopics li.section.main .content .sectionhead span.toggle_open,
-ul.ctopics li.section.main .content .sectionhead span.toggle_open:hover,
-ul.ctopics li.section.main .content .sectionhead span.toggle_closed,
-ul.ctopics li.section.main .content .sectionhead span.toggle_closed:hover {
-  background-image: none !important;
-  /* padding-left: 0;
-        padding-right: 15px;*/
-  padding-left: 0 !important;
-  padding-right: 0 !important;
-}
+        .tag-info {
+          background-color: $laranja;
+          color: white;
+        }
+      }
+    }
+  }
 
-ul.ctopics li.section.main .content .sectionhead .toggle_open .sectionname:after {
-  float: right;
-  font-family: FontAwesome;
-  content: "\f0d8";
-}
+  &:hover {
+    background-color: #fafafa;
+  }
 
-ul.ctopics li.section.main .content .sectionhead .toggle_closed .sectionname:after {
-  float: right;
-  font-family: FontAwesome;
-  content: "\f0d7";
-}
+  span.the_toggle {
+    background-image: none;
+    color: white;
+    padding: 6px 15px 6px 0;
+    margin: 0 4px;
 
-ul.ctopics li.section.main .content .sectionhead .sectionname {
-  /*margin: 0 -20px;*/
-  font-size: 19px !important;
-  border-bottom: none;
-  line-height: 40px;
-  height: auto;
-  color: #000 !important;
-  padding: 0;
-  margin: 4px;
-}
+    &:hover {
+      color: #dadada;
+    }
+  }
 
-ul.ctopics li.section.main .content .sectionhead .sectionname:hover {
-  color: #888;
-}
+  span.the_toggle,
+  span.the_toggle:hover,
+    span.toggle_open,
+    span.toggle_open:hover,
+    span.toggle_closed,
+    span.toggle_closed:hover {
+    background-image: none !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
 
-ul.ctopics li.section.main .content .sectionhead .sectionname a,
-ul.ctopics li.section.main .content .sectionhead .sectionname a:hover,
-ul.ctopics li.section.main .content .sectionhead .sectionname a:visited,
-ul.ctopics li.section.main .content .sectionhead .sectionname a:active {
-  /*color: white;*/
-}
+  .toggle_open .sectionname:after {
+    float: right;
+    font-family: FontAwesome;
+    content: "\f0d8";
+  }
 
-ul.ctopics li.section.main .sectionbody {
-  /*margin: 0 20px;*/
+  .toggle_closed .sectionname:after {
+    float: right;
+    font-family: FontAwesome;
+    content: "\f0d7";
+  }
+
+  .sectionname {
+    font-size: 19px !important;
+    border-bottom: none;
+    line-height: 40px;
+    height: auto;
+    color: #000 !important;
+
+    &:hover {
+      color: #888;
+    }
+  }
 }
 
 ul.ctopics li.section.main .sectionbody ul.section li.activity {
@@ -633,46 +634,22 @@ body #page .course-content ul.ctopics li.section.main.current .section_action_me
   background-color: #0a497d;
   border: 1px solid #0a497d;
 }
-body #page .course-content ul.topics li.section.main.current .content .sectionname,
-body #page .course-content ul.weeks li.section.main.current .content .sectionname,
-body #page .course-content ul.ctopics li.section.main.current .content .sectionname,
-body #page .course-content ul.topics li.section.main.current .content .sectionname:hover,
-body #page .course-content ul.weeks li.section.main.current .content .sectionname:hover,
-body #page .course-content ul.ctopics li.section.main.current .content .sectionname:hover {
-  background-color: #0e64ac;
-}
-body #page .course-content ul.topics li.section.main.current .content .sectionname:hover,
-body #page .course-content ul.weeks li.section.main.current .content .sectionname:hover,
-body #page .course-content ul.ctopics li.section.main.current .content .sectionname:hover,
-body #page .course-content ul.topics li.section.main.current .content .sectionname:hover:hover,
-body #page .course-content ul.weeks li.section.main.current .content .sectionname:hover:hover,
-body #page .course-content ul.ctopics li.section.main.current .content .sectionname:hover:hover {
-  background: #0e64ac;
-}
-body #page ul.ctopics li.section.main.current .sectionhead {
-  background-color: #0e64ac !important;
-}
-body #page ul.ctopics li.section.main.current .sectionhead:hover {
-  background: #0e64ac;
-}
+
 body #page ul.ctopics li.section.main .content .sectionhead a {
-  color: #d25c41;
+  color: $laranja;
 }
 body #page ul.ctopics li.section.main .content .sectionhead a:hover {
   color: #b5452b;
   text-decoration: none;
 }
 body #page ul.ctopics .tcsection .content .sectionbody h4 .tc-medium.off {
-  background-color: #d25c41 !important;
+  background-color: $laranja !important;
+
+  &:hover {
+    background-color: darken($laranja, 5%) !important;
+  }
 }
-body #page ul.ctopics .tcsection .content .sectionbody h4 .tc-medium.off:hover {
-  background-color: #b5452b !important;
-}
-body.category-2 #page .course-content ul.topics li.section.main.current,
-body.category-2 #page .course-content ul.weeks li.section.main.current,
-body.category-2 #page .course-content ul.ctopics li.section.main.current {
-  border-color: #6d4c41;
-}
+
 body.category-2 #page .course-content ul.topics li.section.main.current .section-handle,
 body.category-2 #page .course-content ul.weeks li.section.main.current .section-handle,
 body.category-2 #page .course-content ul.ctopics li.section.main.current .section-handle,

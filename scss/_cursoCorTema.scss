@@ -2,7 +2,7 @@
 @mixin cursoCorTema($corPrimaria, $corEscura, $corAuxiliar) {
 
   /* primarios */
-  
+
   a {
     color: $corAuxiliar;
 
@@ -11,7 +11,7 @@
     }
   }
 
-  .btn-default, .btn-secondary {
+/*  .btn-default, .btn-secondary {
     background-color: $corPrimaria;
     color: white;
 
@@ -19,13 +19,13 @@
       background-color: darken($corPrimaria, 10%) !important;
       color: white;
     }
-  }
-  
+  }*/
+
   .btn-primary {
-    background-color: $corAuxiliar;
-    
+    background-color: $corPrimaria;
+
     &:hover, &:active, &:focus, &:focus-within {
-      background-color: darken($corAuxiliar, 10%) !important;
+      background-color: darken($corPrimaria, 10%) !important;
       color: white;
     }
   }
@@ -153,26 +153,50 @@
     }
   }
 
-  #frontpage-category-names {
+  .course_category_tree > .content{
 
-    .subcategories {
+    > .subcategories {
 
-      .category {
+      > .category {
         border-left: 5px solid $corAuxiliar;
       }
     }
   }
 
-  #page-login-index {
+  &#page-login-index {
 
     .card {
 
       .card-block {
 
         .card-header {
+          margin-bottom: 0;
           background-color: $corPrimaria;
           color: white;
         }
+      }
+    }
+  }
+
+
+  /* cursoFormato */
+
+  ul.ctopics li.section.main.current .sectionhead {
+    background-color: $corPrimaria !important;
+
+    &:hover {
+      background: $corPrimaria;
+    }
+  }
+
+  #page .course-content {
+
+    ul.topics,
+    ul.weeks,
+    ul.ctopics {
+      
+      li.section.main.current {
+        border-color: $corPrimaria;
       }
     }
   }
