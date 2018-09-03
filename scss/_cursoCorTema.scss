@@ -202,10 +202,52 @@
   }
 }
 
+// Padrão
 body {
-  @include cursoCorTema($corPrimaria: #1764AA, $corEscura: #1B3E6E, $corAuxiliar: #C04830);
+  @include cursoCorTema($corPrimaria: $azul, $corEscura: #1B3E6E, $corAuxiliar: $laranja);
 }
 
+// Artes Visuais
+body.category-23 {
+  @include cursoCorTema($corPrimaria: #C64353, $corEscura: #99313E, $corAuxiliar: $azul);
+}
+
+// Biologia
+body.category-32 {
+  @include cursoCorTema($corPrimaria: #8D6708, $corEscura: #654A06, $corAuxiliar: $azul);
+}
+
+// Educação Física
+//body.category- {
+//  @include cursoCorTema($corPrimaria: #A2631A, $corEscura: #764813, $corAuxiliar: $azul);
+//}
+
+// Filosofia
+body.category-31 {
+  @include cursoCorTema($corPrimaria: #537D3B, $corEscura: #3A5B2A, $corAuxiliar: $laranja);
+}
+
+// Física
+body.category-29 {
+  @include cursoCorTema($corPrimaria: #108174, $corEscura: #004B3D, $corAuxiliar: $laranja);
+}
+
+// História
+body.category-30 {
+  @include cursoCorTema($corPrimaria: #4B7B7C, $corEscura: #365959, $corAuxiliar: $laranja);
+}
+
+// Letras Italiano
 body.category-184 {
-  @include cursoCorTema($corPrimaria: #11884E, $corEscura: #125E39, $corAuxiliar: #A91428);
+  @include cursoCorTema($corPrimaria: #11884E, $corEscura: #125E39, $corAuxiliar: $laranja);
+}
+
+// Pedagogia
+body.category-33 {
+  @include cursoCorTema($corPrimaria: #5A4885, $corEscura: #43355F, $corAuxiliar: $laranja);
+}
+
+// Química
+body.category-28 {
+  @include cursoCorTema($corPrimaria: #1B7898, $corEscura: #135A71, $corAuxiliar: $laranja);
 }
