@@ -18,24 +18,11 @@
     Page footer.
 }}
 <footer id="page-footer" class="py-3">
-    <div class="container">
-        <div id="course-footer">{{{ output.course_footer }}}</div>
-
-        {{# output.page_doc_link }}
-            <p class="helplink">{{{ output.page_doc_link }}}</p>
-        {{/ output.page_doc_link }}
-
-        {{{ output.login_info }}}
-        <div class="tool_usertours-resettourcontainer"></div>
-        {{{ output.home_link }}}
-        <nav class="nav navbar-nav d-md-none">
-            {{# output.custom_menu_flat }}
-                <ul class="list-unstyled pt-3">
-                    {{> theme_boost/custom_menu_footer }}
-                </ul>
-            {{/ output.custom_menu_flat }}
-        </nav>
-        {{{ output.standard_footer_html }}}
-        {{{ output.standard_end_of_body_html }}}
+    <div class="marcas-grupo">
+        <a href="http://ufes.br/" target="_blank" title="Ir para sítio da Ufes"><img src="{{{ config.wwwroot }}}/theme/sead/pix/ufes-marca.svg" alt="Ufes"></a>
+        <a href="http://sead.ufes.br/" target="_blank" title="Ir para sítio da Sead"><img src="{{{ config.wwwroot }}}/theme/sead/pix/sead-marca.svg" alt="Sead"></a>
+        <a href="http://uab.capes.gov.br" target="_blank" title="Ir para página da UAB"><img src="{{{ config.wwwroot }}}/theme/sead/pix/uab-marca.svg" alt="UAB"></a>
+        <a href="http://capes.gov.br/" target="_blank" title="Ir para sítio da Capes"><img src="{{{ config.wwwroot }}}/theme/sead/pix/capes-marca.svg" alt="Capes"></a>
+      </div>
     </div>
 </footer>

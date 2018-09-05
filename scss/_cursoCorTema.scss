@@ -1,7 +1,22 @@
 
 @mixin cursoCorTema($corPrimaria, $corEscura, $corAuxiliar) {
 
-  /* primarios */
+  %ligacao-branca {
+    color: white;
+
+    &:visited {
+      color: white;
+    }
+
+    &:hover, &:active, &:focus, &:focus-within {
+      color: #cacaca;
+    }
+  }
+
+
+  //
+  // primarios
+  //
 
   a {
     color: $corAuxiliar;
@@ -10,16 +25,6 @@
       color: darken($corAuxiliar, 10%);
     }
   }
-
-/*  .btn-default, .btn-secondary {
-    background-color: $corPrimaria;
-    color: white;
-
-    &:hover, &:active, &:focus, &:focus-within {
-      background-color: darken($corPrimaria, 10%) !important;
-      color: white;
-    }
-  }*/
 
   .btn-primary {
     background-color: $corPrimaria;
@@ -30,21 +35,17 @@
     }
   }
 
-  /* barraNav */
+
+  //
+  // barraNav
+  //
+
   nav.navbar {
     background-color: $corEscura;
     color: white;
 
     a, i {
-      color: white;
-
-      &:visited {
-        color: white;
-      }
-
-      &:hover, &:active, &:focus, &:focus-within {
-        color: #cacaca;
-      }
+      @extend %ligacao-branca;
     }
 
     button.nav-link {
@@ -86,7 +87,10 @@
     }
   }
 
-  /* barraLat */
+  //
+  // barraLat
+  //
+
   #nav-drawer {
 
     .list-group {
@@ -107,7 +111,11 @@
     }
   }
 
-  /* cabecalho */
+
+  //
+  // cabecalho
+  //
+
   #page-header {
     background-color: $corPrimaria;
     color: white;
@@ -129,18 +137,30 @@
   }
 
 
-  /* post.scss */
+  //
+  // rodape
+  //
+
+  #page-footer {
+    background-color: $corPrimaria;
+    color: white;
+
+    a {
+      @extend %ligacao-branca;
+    }
+  }
+
+
+  //
+  // post.scss
+  //
 
   .dropdown-menu {
     background-color: $corEscura;
     color: white;
 
     a {
-      color: white;
-
-      &:hover, &:active, &:focus, &:focus-within {
-        color: whiteSobrepor;
-      }
+      @extend %ligacao-branca;
     }
 
     .dropdown-item, .dropdown-item a {
@@ -166,6 +186,7 @@
   &#page-login-index {
 
     .card {
+      border-color: $corPrimaria;
 
       .card-block {
 
@@ -179,28 +200,53 @@
   }
 
 
-  /* cursoFormato */
+  //
+  // cursoFormato
+  //
 
-  ul.ctopics li.section.main.current .sectionhead {
-    background-color: $corPrimaria !important;
-
-    &:hover {
-      background: $corPrimaria;
-    }
-  }
-
-  #page .course-content {
+  .course-content {
 
     ul.topics,
     ul.weeks,
     ul.ctopics {
-      
-      li.section.main.current {
-        border-color: $corPrimaria;
+
+      li.section.main {
+
+        &.current {
+          border-color: $corPrimaria;
+
+          .left.side, .right.side, .sectionhead {
+            background-color: $corPrimaria !important;
+
+            &:hover {
+              background: $corPrimaria;
+            }
+          }
+
+          .sectionhead {
+
+            a {
+              color: white;
+            }
+          }
+
+          .section-handle, .section_action_menu {
+            border-color: white;
+          }
+
+          .dropdown-menu {
+            background-color: $corPrimaria;
+
+            a {
+              color: white;
+            }
+          }
+        }
       }
     }
   }
 }
+
 
 // Padrão
 body {

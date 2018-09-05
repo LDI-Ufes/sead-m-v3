@@ -1,7 +1,17 @@
 #page-footer {
-  border-top: 1px solid #d5d5d5;
-  background-color: #f2f2f2;
+  display: inline-flex;
+  flex-flow: row;
+  align-items: center;
+  width: 100%;
   color: #7F7F7F;
+  
+  .marcas-grupo {
+    margin: 0 auto;
+    
+    a {
+      margin: 0 10px;
+    }
+  }
 
   a {
     color: #7F7F7F;

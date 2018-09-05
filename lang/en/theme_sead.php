@@ -9,8 +9,8 @@
  */
  
 defined('MOODLE_INTERNAL') || die();
-$string['choosereadme'] = 'Sead Ufes Theme';
-$string['pluginname'] = 'Sead-M-v3.0.1';
+$string['choosereadme'] = 'Moodle Sead Ufes Theme v3';
+$string['pluginname'] = 'Sead M v3';
 $string['region-side-pre'] = 'Right';
 
 $string['advancedsettings'] = 'Advanced settings';                                                                                  

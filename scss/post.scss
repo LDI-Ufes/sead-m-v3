@@ -21,6 +21,10 @@
   margin-top: 1rem;
 }
 
+.usertext {
+  margin-right: .5 rem;
+}
+
 .messaging-area-container .messaging-area .contacts-area {
 
   .searchtextarea {
@@ -248,16 +252,11 @@
           margin-bottom: 1.5rem;
         }
       }
-      
+
       .summary {
         margin-top: 2rem;
       }
     }    
-  }
-
-  li[aria-label="General"],
-  li[aria-label="Geral"] {
-    border: none !important;
   }
 }
 
@@ -277,6 +276,14 @@
         background-color: white;   
       }
     }
+  }
+}
+
+#participantsform {
+
+  > div {
+    display: inline-flex;
+    flex-flow: column;
   }
 }
 
