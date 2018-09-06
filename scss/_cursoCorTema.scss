@@ -145,7 +145,7 @@
     background-color: $corPrimaria;
     color: white;
 
-    a {
+    a, i, .icon {
       @extend %ligacao-branca;
     }
   }
