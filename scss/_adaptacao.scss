@@ -1,0 +1,18 @@
+@media (max-width: 480px) {
+  
+  nav.navbar {
+    
+    img.marca {
+      display: none;
+    }
+  }
+
+  #page-footer {
+    flex-direction: column-reverse;
+    
+    .marcas-grupo {
+      margin-bottom: 30px;
+    }
+  }
+
+}

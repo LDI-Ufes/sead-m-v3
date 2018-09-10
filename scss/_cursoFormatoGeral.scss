@@ -25,10 +25,6 @@
         }
       }
 
-      .left.side, .right.side {
-        background-color: #fafafa;
-      }
-
       .left.side {
         padding: 0;
       }
@@ -63,7 +59,7 @@
         }
       }
 
-      &.current {
+/*      &.current {
 
         .icon {
           color: white;
@@ -76,7 +72,7 @@
             color: white;
           }
         }
-      }
+      }*/
 
       .content {
         margin: 0;
@@ -96,6 +92,7 @@
           background-image: none;
           border-radius: 0;
           padding: 0 15px;
+          font-weight: 600;
 
           &.accesshide {
             position: relative;
@@ -276,7 +273,6 @@ ul.ctopics .tcsection {
   width: 100%;
 }
 
-
 .course-content ul.topics li.section.main .section-handle,
 .course-content ul.weeks li.section.main .section-handle,
 .course-content ul.ctopics li.section.main .section-handle,
@@ -287,7 +283,6 @@ ul.ctopics .tcsection {
   width: auto;
   min-width: 41px;
   height: 50px;
-  border-bottom: 1px solid #d5d5d5;
 }
 
 .course-content ul.topics li.section.main .section-handle,
@@ -295,7 +290,6 @@ ul.ctopics .tcsection {
 .course-content ul.ctopics li.section.main .section-handle {
   position: relative;
   margin-right: 10px;
-  border-right: 1px solid #d5d5d5;
 }
 .course-content ul.topics li.section.main .section-handle:before,
 .course-content ul.weeks li.section.main .section-handle:before,
@@ -316,14 +310,6 @@ ul.ctopics .tcsection {
 .course-content ul.weeks li.section.main .tceditsection,
 .course-content ul.ctopics li.section.main .tceditsection {
   display: none;
-}
-.course-content ul.topics li.section.main .section_action_menu,
-.course-content ul.weeks li.section.main .section_action_menu,
-.course-content ul.ctopics li.section.main .section_action_menu {
-  position: relative;
-  float: left;
-  padding: 5px;
-  border-left: 1px solid #d5d5d5;
 }
 .course-content ul.topics li.section.main .section_action_menu .section-actions,
 .course-content ul.weeks li.section.main .section_action_menu .section-actions,
@@ -398,32 +384,6 @@ ul.ctopics .tcsection {
 .course-content ul.weeks li.section.main.current .content .sectionname:hover span.the_toggle:hover,
 .course-content ul.ctopics li.section.main.current .content .sectionname:hover span.the_toggle:hover {
   color: #dadada;
-}
-.course-content ul.topics li.section.main.current .content .sectionname a,
-.course-content ul.weeks li.section.main.current .content .sectionname a,
-.course-content ul.ctopics li.section.main.current .content .sectionname a,
-.course-content ul.topics li.section.main.current .content .sectionname:hover a,
-.course-content ul.weeks li.section.main.current .content .sectionname:hover a,
-.course-content ul.ctopics li.section.main.current .content .sectionname:hover a,
-.course-content ul.topics li.section.main.current .content .sectionname a:hover,
-.course-content ul.weeks li.section.main.current .content .sectionname a:hover,
-.course-content ul.ctopics li.section.main.current .content .sectionname a:hover,
-.course-content ul.topics li.section.main.current .content .sectionname:hover a:hover,
-.course-content ul.weeks li.section.main.current .content .sectionname:hover a:hover,
-.course-content ul.ctopics li.section.main.current .content .sectionname:hover a:hover,
-.course-content ul.topics li.section.main.current .content .sectionname a:visited,
-.course-content ul.weeks li.section.main.current .content .sectionname a:visited,
-.course-content ul.ctopics li.section.main.current .content .sectionname a:visited,
-.course-content ul.topics li.section.main.current .content .sectionname:hover a:visited,
-.course-content ul.weeks li.section.main.current .content .sectionname:hover a:visited,
-.course-content ul.ctopics li.section.main.current .content .sectionname:hover a:visited,
-.course-content ul.topics li.section.main.current .content .sectionname a:active,
-.course-content ul.weeks li.section.main.current .content .sectionname a:active,
-.course-content ul.ctopics li.section.main.current .content .sectionname a:active,
-.course-content ul.topics li.section.main.current .content .sectionname:hover a:active,
-.course-content ul.weeks li.section.main.current .content .sectionname:hover a:active,
-.course-content ul.ctopics li.section.main.current .content .sectionname:hover a:active {
-  color: white;
 }
 .course-content ul.topics li.section.main.orphaned .section-handle,
 .course-content ul.weeks li.section.main.orphaned .section-handle,
@@ -503,82 +463,6 @@ ul.ctopics .tcsection {
 .course-content ul.weeks li.section.main.orphaned .content .sectionname .sectionname:after,
 .course-content ul.ctopics li.section.main.orphaned .content .sectionname .sectionname:after {
   display: none;
-}
-
-ul.ctopics li.section.main .content .sectionhead {
-  background-image: none;
-  background-color: #fafafa !important;
-  border-radius: 0 !important;
-  border-bottom: 1px solid #d5d5d5;
-
-  .the_toggle {
-    display: inline-flex;
-    flex-flow: column;
-    width: 100%;
-
-    .section_availability {
-
-      .availabilityinfo {
-        font-weight: normal;
-        color: black;
-
-        .tag-info {
-          background-color: $laranja;
-          color: white;
-        }
-      }
-    }
-  }
-
-  &:hover {
-    background-color: #fafafa;
-  }
-
-  span.the_toggle {
-    background-image: none;
-    color: white;
-    padding: 6px 15px 6px 0;
-    margin: 0 4px;
-
-    &:hover {
-      color: #dadada;
-    }
-  }
-
-  span.the_toggle,
-  span.the_toggle:hover,
-    span.toggle_open,
-    span.toggle_open:hover,
-    span.toggle_closed,
-    span.toggle_closed:hover {
-    background-image: none !important;
-    padding-left: 0 !important;
-    padding-right: 0 !important;
-  }
-
-  .toggle_open .sectionname:after {
-    float: right;
-    font-family: FontAwesome;
-    content: "\f0d8";
-  }
-
-  .toggle_closed .sectionname:after {
-    float: right;
-    font-family: FontAwesome;
-    content: "\f0d7";
-  }
-
-  .sectionname {
-    font-size: 19px !important;
-    border-bottom: none;
-    line-height: 40px;
-    height: auto;
-    color: #000 !important;
-
-    &:hover {
-      color: #888;
-    }
-  }
 }
 
 ul.ctopics li.section.main .sectionbody ul.section li.activity {

@@ -4,6 +4,7 @@
 @import 'barraLat';
 @import 'cabecalho';
 @import 'rodape';
+@import 'adaptacao';
 
 .cardx {
   position: relative;
@@ -288,4 +289,5 @@
 }
 
 @import 'cursoCorTema';
-@import 'cursoFormato';
+@import 'cursoFormatoGeral';
+@import 'cursoFormatoAcordeao';

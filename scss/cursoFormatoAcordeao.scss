@@ -1,0 +1,105 @@
+.course-content {
+
+  ul.ctopics {
+
+    li.section.main {
+
+      .section-handle, .section_action_menu {
+        border-bottom: 1px solid #d5d5d5;
+      }
+
+      .section-handle {
+        border-right: 1px solid #d5d5d5;
+      }
+
+      .left.side, .right.side {
+        background-color: #fafafa;
+      }
+
+      .right.side {
+
+        .section_action_menu {
+          position: relative;
+          float: left;
+          padding: 5px;
+          border-left: 1px solid #d5d5d5;
+        }
+      }
+
+      .sectionhead {
+        background-image: none;
+        background-color: #fafafa !important;
+        border-radius: 0 !important;
+        border-bottom: 1px solid #d5d5d5;
+
+        .the_toggle {
+          display: inline-flex;
+          flex-flow: column;
+          width: 100%;
+
+          .section_availability {
+
+            .availabilityinfo {
+              font-weight: normal;
+              color: black;
+
+              .tag-info {
+                background-color: $laranja;
+                color: white;
+              }
+            }
+          }
+        }
+
+        &:hover {
+          background-color: #fafafa;
+        }
+
+        span.the_toggle {
+          background-image: none;
+          /*color: white;*/
+          padding: 6px 15px 6px 0;
+          margin: 0 4px;
+
+          &:hover {
+            /*color: #dadada;*/
+          }
+        }
+
+        span.the_toggle,
+        span.the_toggle:hover,
+          span.toggle_open,
+          span.toggle_open:hover,
+          span.toggle_closed,
+          span.toggle_closed:hover {
+          background-image: none !important;
+          padding-left: 0 !important;
+          padding-right: 0 !important;
+        }
+        
+        .toggle_open .sectionname:after, .toggle_closed .sectionname:after {
+          color: #333;
+        }
+
+        .toggle_open .sectionname:after {
+          float: right;
+          font-family: FontAwesome;
+          content: "\f0d8";
+        }
+
+        .toggle_closed .sectionname:after {
+          float: right;
+          font-family: FontAwesome;
+          content: "\f0d7";
+        }
+
+        .sectionname {
+          font-size: 19px !important;
+          border-bottom: none;
+          line-height: 40px;
+          height: auto;
+        }
+      }
+    }
+  }
+}

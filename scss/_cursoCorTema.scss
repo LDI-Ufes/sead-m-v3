@@ -215,20 +215,43 @@
         &.current {
           border-color: $corPrimaria;
 
-          .left.side, .right.side, .sectionhead {
-            background-color: $corPrimaria !important;
-
-            &:hover {
-              background: $corPrimaria;
-            }
+          .sectionname a {
+            color: $corEscura;
           }
 
-          .sectionhead {
-
-            a {
+          .section_availability {
+            .availabilityinfo {
               color: white;
             }
           }
+
+          // Modo de edição ativo
+          &.sectiondraggable {
+
+            .section_availability {
+              .availabilityinfo {
+                color: black;
+              }
+            }
+          }
+
+          /*          .sectionhead {
+          
+                      a {
+                        color: white;
+                      }
+          
+                      .sectionname a {
+                        color: white;
+                      }
+          
+                      .section_availability {
+          
+                        .availabilityinfo {
+                          color: white;
+                        }
+                      }
+                    }*/
 
           .section-handle, .section_action_menu {
             border-color: white;
@@ -238,6 +261,32 @@
             background-color: $corPrimaria;
 
             a {
+              color: white;
+            }
+          }
+        }
+      }
+    }
+
+    ul.ctopics {
+
+      li.section.main {
+
+        &.current {
+
+          .left.side, .right.side, .sectionhead {
+            border-color: $corPrimaria;
+            background-color: $corPrimaria !important;
+
+            &:hover {
+              background: $corPrimaria;
+            }
+
+            .sectionname a, .action-menu a, i.icon {
+              @extend %ligacao-branca;
+            }
+
+            .toggle_open .sectionname:after, .toggle_closed .sectionname:after {
               color: white;
             }
           }

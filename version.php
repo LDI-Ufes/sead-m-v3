@@ -9,7 +9,7 @@
  */
 
 defined('MOODLE_INTERNAL') || die;
-$plugin->version = 2018090500;
+$plugin->version = 2018091000;
 $plugin->requires = 2018041200;
 $plugin->component = 'theme_sead';
 $plugin->dependencies = array(
