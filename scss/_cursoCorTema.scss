@@ -235,24 +235,6 @@
             }
           }
 
-          /*          .sectionhead {
-          
-                      a {
-                        color: white;
-                      }
-          
-                      .sectionname a {
-                        color: white;
-                      }
-          
-                      .section_availability {
-          
-                        .availabilityinfo {
-                          color: white;
-                        }
-                      }
-                    }*/
-
           .section-handle, .section_action_menu {
             border-color: white;
           }
@@ -308,14 +290,9 @@ body.category-23 {
 }
 
 // Biologia
-body.category-32 {
+/*body.category-32 {
   @include cursoCorTema($corPrimaria: #8D6708, $corEscura: #654A06, $corAuxiliar: $azul);
-}
-
-// Educação Física
-//body.category- {
-//  @include cursoCorTema($corPrimaria: #A2631A, $corEscura: #764813, $corAuxiliar: $azul);
-//}
+}*/
 
 // Filosofia
 body.category-31 {
