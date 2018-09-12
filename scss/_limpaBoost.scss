@@ -2,3 +2,15 @@
 .course-content .current::before {
   border-left: none;
 }
+
+// limpa topColl
+.course-content ul.ctopics {
+
+  &.bsnewgrid li.section.main {
+    margin: 15px 1px 1px 1px;
+  }
+
+  li.section.hidden .sectionname {		
+    font-style: normal;		
+  }
+}

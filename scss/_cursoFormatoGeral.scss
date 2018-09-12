@@ -7,6 +7,10 @@
 
     #section-0 {
       border: none;
+      
+      .right.side {
+        background: none;
+      }
     }
 
     li.section.main {
@@ -30,9 +34,13 @@
       }
 
       .right.side {
+        display: inline-flex;
+        justify-content: flex-end;
+        align-items: center;
+        margin: 0 10px 0 0;
+        height: 60px;
+        width: 50px;
         padding: 0;
-        width: 80px;
-        margin-right: -1px;
 
         img.spacer {
           display: none;
@@ -44,6 +52,13 @@
           .textmenu .caret {
             border-top-color: white !important;
           }
+        }
+      }
+      
+      &.sectiondraggable {
+        
+        .right.side {
+          width: 80px;
         }
       }
 
@@ -59,20 +74,20 @@
         }
       }
 
-/*      &.current {
-
-        .icon {
-          color: white;
-        }
-
-        a {
-          color: white;
-
-          &:hover {
-            color: white;
-          }
-        }
-      }*/
+      /*      &.current {
+      
+              .icon {
+                color: white;
+              }
+      
+              a {
+                color: white;
+      
+                &:hover {
+                  color: white;
+                }
+              }
+            }*/
 
       .content {
         margin: 0;
